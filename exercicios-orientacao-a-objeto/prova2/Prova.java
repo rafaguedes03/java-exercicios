@@ -1,13 +1,15 @@
-import java.util.*;
-public class Prova{
-    public static void main(String[] args){
-        Pedido p = new Pedido(123, "Rafa");
-        Pedido p1 = new Pedido(123);
+import java.util.Scanner;
 
-        System.out.println(p1.getValor());
+public class Prova {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int opt;
+        do {
+            System.out.println("O que comprar???\n1. BigMac R$ 20,00\n2. Hamburguer R$ 12,00\n3. CheeseBurguer R$ 15,00\n0. Sair");
 
-        System.out.println(p.adiciona(1, 100));
-        System.out.println(p.getValor());
+            opt = scan.nextInt();
 
+            System.out.println("Adicionais?");
+        } while (opt != 0);
     }
 }
